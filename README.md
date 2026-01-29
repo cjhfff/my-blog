@@ -56,7 +56,25 @@ tags: ["Next.js", "Tech"]
 
 ### 4. 部署
 
-推送到 GitHub 并在 Vercel 导入项目即可自动部署。
+#### 一键部署到 Vercel
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fcjhfff%2Fmy-blog)
+
+点击上方按钮，使用 GitHub 登录 Vercel，然后点击 "Deploy" 即可完成部署。
+
+#### 手动部署步骤
+
+1. **访问** [Vercel](https://vercel.com)
+2. **使用 GitHub 登录**
+3. **点击 "Add New Project"**
+4. **导入仓库** `cjhfff/my-blog`
+5. **点击 "Deploy"**
+
+部署完成后，您将获得一个类似 `my-blog.vercel.app` 的在线地址。
+
+#### 自动部署
+
+每次推送到 `main` 分支时，Vercel 会自动重新部署。
 
 ## 项目结构
 
