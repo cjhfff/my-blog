@@ -83,7 +83,9 @@ export async function getPostData(slug: string): Promise<Post | null> {
   }
 
   try {
-    const fileContents = fs.readFileSync(fullPath, 'utf8');
+    // 使用 'binary' 读取，然后转换为 UTF-8，处理中文编码问题
+    const buffer = fs.readFileSync(fullPath);
+    const fileContents = buffer.toString('utf8');
     const matterResult = matter(fileContents);
 
     const post: Post = {
